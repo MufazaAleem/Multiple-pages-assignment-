@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: /*#333*/ lightgray;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Updated text color to white */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+nav a:hover {
+  background-color: #555; /* Updated hover background color */
+  color: white; /* Updated hover text color to white */
+}
+
+/* Highlight the current page in the navigation bar */
+nav a.current-page {
+  background-color: #fff;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+}
+
+/* Common styles for content sections */
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+/* Homepage specific styles */
+main p:first-child {
+  font-size: 1.2rem;
+}
+
+/* Biography page specific styles */
+.main-image {
+  text-align: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sunnah and Hadith page specific styles */
+.sunnah-list,
+.hadith-list {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.sunnah-list li,
+.hadith-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sunnah-list li p,
+.hadith-list li p {
+  margin-bottom: 10px;
+}
+
+/* Resources page specific styles */
+ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #f9f9f9;
+}
+
+/* Contact page specific styles */
+.contact-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
